@@ -45,7 +45,10 @@
 </template>
 
 <script>
-export default {};
+export default {
+  //Recibo el props ruta de App.vue
+  props:['ruta']
+};
 </script>
 
 <style>

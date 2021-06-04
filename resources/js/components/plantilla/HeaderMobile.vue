@@ -6,7 +6,7 @@
     >
       <!--begin::Logo-->
       <a href="index.html">
-        <img alt="Logo" src="assets/media/logos/logo-light.png" />
+        <img alt="Logo" :src="ruta+'/assets/media/logos/logo-light.png'" />
       </a>
       <!--end::Logo-->
       <!--begin::Toolbar-->
@@ -65,7 +65,10 @@
 </template>
 
 <script>
-export default {};
+export default {
+  //Recibo el props ruta de App.vue
+  props:['ruta']
+};
 </script>
 
 <style>

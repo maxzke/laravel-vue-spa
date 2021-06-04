@@ -3440,12 +3440,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  //Utilizar la props de app.blade.php que recibe la ruta base del proyecto
+  props: ['ruta'],
   //Para poder utilizar HeaderMovil aqui, lo exportamos:
   components: {
     HeaderMovil: _plantilla_HeaderMobile__WEBPACK_IMPORTED_MODULE_0__.default,
@@ -6966,7 +6969,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  //Recibo el props ruta de App.vue
+  props: ['ruta']
+});
 
 /***/ }),
 
@@ -7160,7 +7166,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  //Recibo el props ruta de App.vue
+  props: ['ruta']
+});
 
 /***/ }),
 
@@ -7221,7 +7230,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  //Recibo el props ruta de App.vue
+  props: ['ruta']
+});
 
 /***/ }),
 
@@ -9622,7 +9634,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  //Recibo el props ruta de App.vue
+  props: ['ruta']
+});
 
 /***/ }),
 
@@ -9703,7 +9718,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  //Recibo el props ruta de App.vue
+  props: ['ruta']
+});
 
 /***/ }),
 
@@ -45572,14 +45590,14 @@ var render = function() {
   return _c(
     "div",
     [
-      _c("HeaderMovil"),
+      _c("HeaderMovil", { attrs: { ruta: _vm.ruta } }),
       _vm._v(" "),
       _c("div", { staticClass: "d-flex flex-column flex-root" }, [
         _c(
           "div",
           { staticClass: "d-flex flex-row flex-column-fluid page" },
           [
-            _c("Aside"),
+            _c("Aside", { attrs: { ruta: _vm.ruta } }),
             _vm._v(" "),
             _c(
               "div",
@@ -45588,11 +45606,11 @@ var render = function() {
                 attrs: { id: "kt_wrapper" }
               },
               [
-                _c("Header"),
+                _c("Header", { attrs: { ruta: _vm.ruta } }),
                 _vm._v(" "),
-                _c("Content"),
+                _c("Content", { attrs: { ruta: _vm.ruta } }),
                 _vm._v(" "),
-                _c("Footer")
+                _c("Footer", { attrs: { ruta: _vm.ruta } })
               ],
               1
             )
@@ -50480,7 +50498,18 @@ var render = function() {
           "div",
           { staticClass: "brand flex-column-auto", attrs: { id: "kt_brand" } },
           [
-            _vm._m(0),
+            _c(
+              "a",
+              { staticClass: "brand-logo", attrs: { href: "index.html" } },
+              [
+                _c("img", {
+                  attrs: {
+                    alt: "Logo",
+                    src: _vm.ruta + "/assets/media/logos/logo-light.png"
+                  }
+                })
+              ]
+            ),
             _vm._v(" "),
             _c(
               "button",
@@ -50550,26 +50579,12 @@ var render = function() {
           ]
         ),
         _vm._v(" "),
-        _vm._m(1)
+        _vm._m(0)
       ]
     )
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "a",
-      { staticClass: "brand-logo", attrs: { href: "index.html" } },
-      [
-        _c("img", {
-          attrs: { alt: "Logo", src: "assets/media/logos/logo-light.png" }
-        })
-      ]
-    )
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -54515,7 +54530,159 @@ var render = function() {
                 )
               ]),
               _vm._v(" "),
-              _vm._m(25),
+              _c("div", { staticClass: "dropdown" }, [
+                _c(
+                  "div",
+                  {
+                    staticClass: "topbar-item",
+                    attrs: {
+                      "data-toggle": "dropdown",
+                      "data-offset": "10px,0px"
+                    }
+                  },
+                  [
+                    _c(
+                      "div",
+                      {
+                        staticClass:
+                          "btn btn-icon btn-clean btn-dropdown btn-lg mr-1"
+                      },
+                      [
+                        _c("img", {
+                          staticClass: "h-20px w-20px rounded-sm",
+                          attrs: {
+                            src:
+                              _vm.ruta +
+                              "/assets/media/svg/flags/226-united-states.svg",
+                            alt: ""
+                          }
+                        })
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "dropdown-menu p-0 m-0 dropdown-menu-anim-up dropdown-menu-sm dropdown-menu-right"
+                  },
+                  [
+                    _c("ul", { staticClass: "navi navi-hover py-4" }, [
+                      _c("li", { staticClass: "navi-item" }, [
+                        _c(
+                          "a",
+                          { staticClass: "navi-link", attrs: { href: "#" } },
+                          [
+                            _c(
+                              "span",
+                              { staticClass: "symbol symbol-20 mr-3" },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    src:
+                                      _vm.ruta +
+                                      "/assets/media/svg/flags/226-united-states.svg",
+                                    alt: ""
+                                  }
+                                })
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "navi-text" }, [
+                              _vm._v("English")
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _vm._m(25),
+                      _vm._v(" "),
+                      _c("li", { staticClass: "navi-item" }, [
+                        _c(
+                          "a",
+                          { staticClass: "navi-link", attrs: { href: "#" } },
+                          [
+                            _c(
+                              "span",
+                              { staticClass: "symbol symbol-20 mr-3" },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    src:
+                                      _vm.ruta +
+                                      "/assets/media/svg/flags/162-germany.svg",
+                                    alt: ""
+                                  }
+                                })
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "navi-text" }, [
+                              _vm._v("German")
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", { staticClass: "navi-item" }, [
+                        _c(
+                          "a",
+                          { staticClass: "navi-link", attrs: { href: "#" } },
+                          [
+                            _c(
+                              "span",
+                              { staticClass: "symbol symbol-20 mr-3" },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    src:
+                                      _vm.ruta +
+                                      "/assets/media/svg/flags/063-japan.svg",
+                                    alt: ""
+                                  }
+                                })
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "navi-text" }, [
+                              _vm._v("Japanese")
+                            ])
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", { staticClass: "navi-item" }, [
+                        _c(
+                          "a",
+                          { staticClass: "navi-link", attrs: { href: "#" } },
+                          [
+                            _c(
+                              "span",
+                              { staticClass: "symbol symbol-20 mr-3" },
+                              [
+                                _c("img", {
+                                  attrs: {
+                                    src:
+                                      _vm.ruta +
+                                      "/assets/media/svg/flags/195-france.svg",
+                                    alt: ""
+                                  }
+                                })
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "navi-text" }, [
+                              _vm._v("French")
+                            ])
+                          ]
+                        )
+                      ])
+                    ])
+                  ]
+                )
+              ]),
               _vm._v(" "),
               _vm._m(26)
             ])
@@ -56032,115 +56199,16 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "dropdown" }, [
-      _c(
-        "div",
-        {
-          staticClass: "topbar-item",
-          attrs: { "data-toggle": "dropdown", "data-offset": "10px,0px" }
-        },
-        [
-          _c(
-            "div",
-            { staticClass: "btn btn-icon btn-clean btn-dropdown btn-lg mr-1" },
-            [
-              _c("img", {
-                staticClass: "h-20px w-20px rounded-sm",
-                attrs: {
-                  src: "assets/media/svg/flags/226-united-states.svg",
-                  alt: ""
-                }
-              })
-            ]
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass:
-            "dropdown-menu p-0 m-0 dropdown-menu-anim-up dropdown-menu-sm dropdown-menu-right"
-        },
-        [
-          _c("ul", { staticClass: "navi navi-hover py-4" }, [
-            _c("li", { staticClass: "navi-item" }, [
-              _c("a", { staticClass: "navi-link", attrs: { href: "#" } }, [
-                _c("span", { staticClass: "symbol symbol-20 mr-3" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "assets/media/svg/flags/226-united-states.svg",
-                      alt: ""
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("span", { staticClass: "navi-text" }, [_vm._v("English")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "navi-item active" }, [
-              _c("a", { staticClass: "navi-link", attrs: { href: "#" } }, [
-                _c("span", { staticClass: "symbol symbol-20 mr-3" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "assets/media/svg/flags/128-spain.svg",
-                      alt: ""
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("span", { staticClass: "navi-text" }, [_vm._v("Spanish")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "navi-item" }, [
-              _c("a", { staticClass: "navi-link", attrs: { href: "#" } }, [
-                _c("span", { staticClass: "symbol symbol-20 mr-3" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "assets/media/svg/flags/162-germany.svg",
-                      alt: ""
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("span", { staticClass: "navi-text" }, [_vm._v("German")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "navi-item" }, [
-              _c("a", { staticClass: "navi-link", attrs: { href: "#" } }, [
-                _c("span", { staticClass: "symbol symbol-20 mr-3" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "assets/media/svg/flags/063-japan.svg",
-                      alt: ""
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("span", { staticClass: "navi-text" }, [_vm._v("Japanese")])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("li", { staticClass: "navi-item" }, [
-              _c("a", { staticClass: "navi-link", attrs: { href: "#" } }, [
-                _c("span", { staticClass: "symbol symbol-20 mr-3" }, [
-                  _c("img", {
-                    attrs: {
-                      src: "assets/media/svg/flags/195-france.svg",
-                      alt: ""
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("span", { staticClass: "navi-text" }, [_vm._v("French")])
-              ])
-            ])
-          ])
-        ]
-      )
+    return _c("li", { staticClass: "navi-item active" }, [
+      _c("a", { staticClass: "navi-link", attrs: { href: "#" } }, [
+        _c("span", { staticClass: "symbol symbol-20 mr-3" }, [
+          _c("img", {
+            attrs: { src: "/assets/media/svg/flags/128-spain.svg", alt: "" }
+          })
+        ]),
+        _vm._v(" "),
+        _c("span", { staticClass: "navi-text" }, [_vm._v("Spanish")])
+      ])
     ])
   },
   function() {
@@ -56216,12 +56284,19 @@ var render = function() {
         attrs: { id: "kt_header_mobile" }
       },
       [
-        _vm._m(0),
+        _c("a", { attrs: { href: "index.html" } }, [
+          _c("img", {
+            attrs: {
+              alt: "Logo",
+              src: _vm.ruta + "/assets/media/logos/logo-light.png"
+            }
+          })
+        ]),
         _vm._v(" "),
         _c("div", { staticClass: "d-flex align-items-center" }, [
-          _vm._m(1),
+          _vm._m(0),
           _vm._v(" "),
-          _vm._m(2),
+          _vm._m(1),
           _vm._v(" "),
           _c(
             "button",
@@ -56290,16 +56365,6 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("a", { attrs: { href: "index.html" } }, [
-      _c("img", {
-        attrs: { alt: "Logo", src: "assets/media/logos/logo-light.png" }
-      })
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

@@ -2,24 +2,25 @@
   <div>
       <!--begin::Main-->
 		<!--begin::Header Mobile **********************************************************************-->
-		<HeaderMovil></HeaderMovil>
+		<HeaderMovil :ruta="ruta"></HeaderMovil>
 		<!--end::Header Mobile ************************************************************************-->
 		<div class="d-flex flex-column flex-root">
 			<!--begin::Page-->
 			<div class="d-flex flex-row flex-column-fluid page">
 				<!--begin::Aside #######################################################################################-->
-				<Aside></Aside>
+				<!--Mando el props ruta mediante data-binding-->
+				<Aside :ruta="ruta"></Aside>
 				<!--end::Aside #######################################################################################-->
 				<!--begin::Wrapper-->
 				<div class="d-flex flex-column flex-row-fluid wrapper" id="kt_wrapper">
 					<!--begin::Header  **********************************************************************-->
-					<Header></Header>
+					<Header :ruta="ruta"></Header>
 					<!--end::Header  ************************************************************************-->
 					<!--begin::Content #######################################################################################-->
-					<Content></Content>
+					<Content :ruta="ruta"></Content>
 					<!--end::Content #######################################################################################-->
 					<!--begin::Footer-->
-					<Footer></Footer>
+					<Footer :ruta="ruta"></Footer>
 					<!--end::Footer-->
 				</div>
 				<!--end::Wrapper-->
@@ -1596,8 +1597,10 @@ import Content from './plantilla/Content'
 import Footer from './plantilla/Footer'
 
 export default {
-//Para poder utilizar HeaderMovil aqui, lo exportamos:
-components:{HeaderMovil, Aside, Header, Content, Footer}
+	//Utilizar la props de app.blade.php que recibe la ruta base del proyecto
+	props:['ruta'],
+	//Para poder utilizar HeaderMovil aqui, lo exportamos:
+	components:{HeaderMovil, Aside, Header, Content, Footer}
 }
 </script>
 
