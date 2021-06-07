@@ -62,106 +62,78 @@
           <!--begin::Menu Nav-->
           <ul class="menu-nav">
             <li class="menu-item menu-item-active" aria-haspopup="true">
-              <a href="index.html" class="menu-link">
+              <!-- <a href="index.html" class="menu-link"> -->
+              <router-link class="menu-link" :to="'/'">
                 <i class="menu-icon flaticon-home"></i>
                 <span class="menu-text">Dashboard</span>
-              </a>
+              </router-link>
+              <!-- </a> -->
             </li>
             <li class="menu-section">
               <h4 class="menu-text">OPERACIONES</h4>
               <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
             </li>
             <li class="menu-item" aria-haspopup="true">
-              <a
-                target="_blank"
-                href="#"
-                class="menu-link"
-              >
+              <!-- <a target="_blank" href="#" class="menu-link"> -->
+              <router-link class="menu-link" :to="'/pedido'">
                 <i class="menu-icon flaticon-web"></i>
                 <span class="menu-text">Pedidos</span>
-              </a>
+              </router-link>
+              <!-- </a> -->
             </li>
             <li class="menu-item" aria-haspopup="true">
-              <a
-                target="_blank"
-                href="#"
-                class="menu-link"
-              >
+              <router-link class="menu-link" :to="'/cliente'">
                 <i class="menu-icon flaticon-cogwheel-1"></i>
                 <span class="menu-text">Clientes</span>
-              </a>
+              </router-link>
             </li>
             <li class="menu-section">
               <h4 class="menu-text">CONFIGURACION</h4>
               <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
             </li>
             <li class="menu-item" aria-haspopup="true">
-              <a
-                target="_blank"
-                href="#"
-                class="menu-link"
-              >
+              <router-link class="menu-link" :to="'/categoria'">
                 <i class="menu-icon flaticon-cogwheel-1"></i>
                 <span class="menu-text">Categorias</span>
-              </a>
+              </router-link>
             </li>
             <li class="menu-item" aria-haspopup="true">
-              <a
-                target="_blank"
-                href="#"
-                class="menu-link"
-              >
+              <router-link class="menu-link" :to="'/producto'">
                 <i class="menu-icon flaticon-cogwheel-1"></i>
                 <span class="menu-text">Productos</span>
-              </a>
+              </router-link>
             </li> 
             <li class="menu-section">
               <h4 class="menu-text">ADMINISTRACION</h4>
               <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
             </li>
             <li class="menu-item" aria-haspopup="true">
-              <a
-                target="_blank"
-                href="#"
-                class="menu-link"
-              >
+              <router-link class="menu-link" :to="'/usuario'">
                 <i class="menu-icon flaticon-cogwheel-1"></i>
                 <span class="menu-text">Usuarios</span>
-              </a>
+              </router-link>
             </li>
             <li class="menu-item" aria-haspopup="true">
-              <a
-                target="_blank"
-                href="#"
-                class="menu-link"
-              >
+              <router-link class="menu-link" :to="'/rol'">
                 <i class="menu-icon flaticon-cogwheel-1"></i>
                 <span class="menu-text">Roles</span>
-              </a>
+              </router-link>
             </li>
             <li class="menu-item" aria-haspopup="true">
-              <a
-                target="_blank"
-                href="#"
-                class="menu-link"
-              >
+              <router-link class="menu-link" :to="'/permiso'">
                 <i class="menu-icon flaticon-cogwheel-1"></i>
                 <span class="menu-text">Permisos</span>
-              </a>
+              </router-link>
             </li>
             <li class="menu-section">
               <h4 class="menu-text">REPORTES</h4>
               <i class="menu-icon ki ki-bold-more-hor icon-md"></i>
             </li>
             <li class="menu-item" aria-haspopup="true">
-              <a
-                target="_blank"
-                href="#"
-                class="menu-link"
-              >
+              <router-link class="menu-link" :to="'/pedido'">
                 <i class="menu-icon flaticon-cogwheel-1"></i>
                 <span class="menu-text">Pedidos</span>
-              </a>
+              </router-link>
             </li>         
             <!-- <li
               class="menu-item menu-item-submenu"

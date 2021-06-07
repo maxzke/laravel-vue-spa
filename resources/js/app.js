@@ -29,7 +29,11 @@ Vue.component('App', require('./components/App.vue').default);
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+//importamos el archivo routes.js
+import router from './routes'
 
 const app = new Vue({
     el: '#app',
+    //usamos el archivo routes.js en la instacia de vue
+    router
 });

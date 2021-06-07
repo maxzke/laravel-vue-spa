@@ -18,7 +18,7 @@
                 class="breadcrumb breadcrumb-transparent breadcrumb-dot font-weight-bold p-0 my-2 font-size-sm"
               >
                 <li class="breadcrumb-item">
-                  <a href="" class="text-muted">General</a>
+                  <a href="" class="text-muted">Rol</a>
                 </li>
                 <li class="breadcrumb-item">
                   <a href="" class="text-muted">Empty Page</a>
@@ -168,7 +168,7 @@
         <!--begin::Container-->
         <div class="container-fluid">
           <p>Page content goes here...</p>
-          <span>Desde App.vue usando view-router</span>
+          <span>Desde Rol</span>
         </div>
         <!--end::Container-->
       </div>
@@ -179,8 +179,7 @@
 
 <script>
 export default {
-  //Recibo el props ruta de App.vue
-  //props:['ruta']
+
 };
 </script>
 
