@@ -15,4 +15,5 @@
 		<!--end::Page Vendors-->
 		<!--begin::Page Scripts(used by this page)-->
 		<script src="{{ asset('assets') }}/js/pages/widgets.js"></script>
+		<!--begin::Page Scripts(used by this page)-->
 		<!--end::Page Scripts-->

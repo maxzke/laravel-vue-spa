@@ -7,6 +7,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!--begin::Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
+    <!--begin::Page Custom Styles(used by this page)-->
+		<link href="{{ asset('assets') }}/css/pages/users/login-2.css" rel="stylesheet" type="text/css" />
     <!--end::Fonts-->
     <!--begin::Page Vendors Styles(used by this page)-->
     <link href="{{ asset('assets') }}/plugins/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />

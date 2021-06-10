@@ -21,3 +21,5 @@ Route::get('/{optional?}', function () {
     return view('app');
 })->name('basepath');
 
+Route::get('/administracion/usuario/getListarUsuarios', 'Administracion\UserController@getListarUsuarios');
+

@@ -11,18 +11,18 @@
             <!--begin::Page Heading-->
             <div class="d-flex align-items-baseline mr-5">
               <!--begin::Page Title-->
-              <h5 class="text-dark font-weight-bold my-2 mr-5">Empty Page</h5>
+              <h5 class="text-dark font-weight-bold my-2 mr-5">ADMINISTRACIÓN</h5>
               <!--end::Page Title-->
               <!--begin::Breadcrumb-->
               <ul
                 class="breadcrumb breadcrumb-transparent breadcrumb-dot font-weight-bold p-0 my-2 font-size-sm"
               >
                 <li class="breadcrumb-item">
-                  <a href="" class="text-muted">Usuario</a>
+                  <a href="" class="text-muted">Usuarios</a>
                 </li>
-                <li class="breadcrumb-item">
+                <!-- <li class="breadcrumb-item">
                   <a href="" class="text-muted">Empty Page</a>
-                </li>
+                </li> -->
               </ul>
               <!--end::Breadcrumb-->
             </div>
@@ -167,8 +167,370 @@
       <div class="d-flex flex-column-fluid">
         <!--begin::Container-->
         <div class="container-fluid">
-          <p>Page content goes here...</p>
-          <span>Desde Usuario</span>
+          <!-- <p>Page content goes here...</p>
+          <span>Desde Usuario</span> -->
+          <!-- tabla-widget -->
+          <div class="card card-custom card-stretch gutter-b">
+											<!--begin::Header-->
+											<div class="card-header border-0 py-5">
+												<h3 class="card-title align-items-start flex-column">
+													<!--begin::Form-->
+                                <input type="email" class="form-control form-control-sm" placeholder="Buscar">
+                              <!--end: Code-->
+                          <!--end::Form-->
+												</h3>
+												<div class="card-toolbar">
+													<a href="#" class="btn btn-sm btn-success font-weight-bolder font-size-sm mr-3">Nuevo Usuario</a>
+													<a href="#" class="btn btn-sm btn-danger font-weight-bolder font-size-sm">Create</a>
+												</div>
+											</div>
+											<!--end::Header-->
+											<!--begin::Body-->
+											<div class="card-body pt-0 pb-3">
+												<div class="tab-content">
+													<!--begin::Table-->
+													<div class="table-responsive">
+														<table class="table table-head-custom table-head-bg table-borderless table-vertical-center">
+															<thead>
+																<tr class="text-left text-uppercase">
+																	<th style="min-width: 250px" class="pl-7">
+																		nombre
+																	</th>
+																	<th style="min-width: 100px">correo</th>
+																	<th style="min-width: 100px">usuario</th>
+																	<th style="min-width: 100px">estado</th>
+																	<th style="min-width: 210px" class="pl-7">
+                                    acciones
+                                  </th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td class="pl-0 py-1">
+																		<div class="d-flex align-items-center">
+																			<div class="symbol symbol-50 symbol-light mr-4">
+																				<span class="symbol-label">
+																					<img src="assets/media/svg/avatars/001-boy.svg" class="h-75 align-self-end" alt="">
+																				</span>
+																			</div>
+																			<div>
+																				<span class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-sm text-capitalize">
+                                          david ramírez flores
+                                        </span>
+																			</div>
+																		</div>
+																	</td>
+																	<td>
+																		<span class="text-dark-75 font-weight-bolder d-block font-size-sm">ramzdav@hotmail.com</span>
+																	</td>
+																	<td>
+																		<span class="text-dark-75 font-weight-bolder d-block font-size-sm">deividz</span>
+																	</td>
+																	<td>
+																		<span class="label label-lg label-light-warning label-inline">Inactivo</span>																												
+																	</td>
+																	<td class="pr-0 text-center">                                    
+																		<a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm">
+																		<span class="svg-icon svg-icon-md svg-icon-primary">
+																			<!--begin::Svg Icon | path:assets/media/svg/icons/General/Settings-1.svg-->
+																			<i class="fas fa-list text-primary"></i>
+																			<!--end::Svg Icon-->
+																		</span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm mx-3">
+                                      <span class="svg-icon svg-icon-md svg-icon-primary">
+                                        <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Write.svg-->
+                                        <i class="far fa-edit text-primary"></i>
+                                        <!--end::Svg Icon-->
+                                      </span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm">
+                                      <span class="svg-icon svg-icon-md svg-icon-primary">
+                                        <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
+                                        <i class="fas fa-key text-primary"></i>
+                                        <!--end::Svg Icon-->
+                                      </span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm mx-3">
+                                      <span class="svg-icon svg-icon-md svg-icon-primary">
+                                        <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Write.svg-->
+                                        <i class="fas fa-ban text-primary"></i>
+                                        <!--end::Svg Icon-->
+                                      </span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm">
+                                      <span class="svg-icon svg-icon-md svg-icon-primary">
+                                        <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
+                                        <i class="fas fa-check text-primary"></i>
+                                        <!--end::Svg Icon-->
+                                      </span>
+                                    </a>
+																	</td>
+																 </tr>
+                                 <tr>
+																	<td class="pl-0 py-1">
+																		<div class="d-flex align-items-center">
+																			<div class="symbol symbol-50 symbol-light mr-4">
+																				<span class="symbol-label">
+																					<img src="assets/media/svg/avatars/001-boy.svg" class="h-75 align-self-end" alt="">
+																				</span>
+																			</div>
+																			<div>
+																				<span class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-sm text-capitalize">
+                                          david ramírez flores
+                                        </span>
+																			</div>
+																		</div>
+																	</td>
+																	<td>
+																		<span class="text-dark-75 font-weight-bolder d-block font-size-sm">ramzdave@gmail.com</span>
+																	</td>
+																	<td>
+																		<span class="text-dark-75 font-weight-bolder d-block font-size-sm">deividz</span>
+																	</td>
+																	<td>
+																		<span class="label label-lg label-light-warning label-inline">Inactivo</span>																												
+																	</td>
+																	<td class="pr-0 text-center">                                    
+																		<a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm">
+																		<span class="svg-icon svg-icon-md svg-icon-primary">
+																			<!--begin::Svg Icon | path:assets/media/svg/icons/General/Settings-1.svg-->
+																			<i class="fas fa-list text-primary"></i>
+																			<!--end::Svg Icon-->
+																		</span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm mx-3">
+                                      <span class="svg-icon svg-icon-md svg-icon-primary">
+                                        <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Write.svg-->
+                                        <i class="far fa-edit text-primary"></i>
+                                        <!--end::Svg Icon-->
+                                      </span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm">
+                                      <span class="svg-icon svg-icon-md svg-icon-primary">
+                                        <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
+                                        <i class="fas fa-key text-primary"></i>
+                                        <!--end::Svg Icon-->
+                                      </span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm mx-3">
+                                      <span class="svg-icon svg-icon-md svg-icon-primary">
+                                        <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Write.svg-->
+                                        <i class="fas fa-ban text-primary"></i>
+                                        <!--end::Svg Icon-->
+                                      </span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm">
+                                      <span class="svg-icon svg-icon-md svg-icon-primary">
+                                        <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
+                                        <i class="fas fa-check text-primary"></i>
+                                        <!--end::Svg Icon-->
+                                      </span>
+                                    </a>
+																	</td>
+																 </tr>
+                                 <tr>
+																	<td class="pl-0 py-1">
+																		<div class="d-flex align-items-center">
+																			<div class="symbol symbol-50 symbol-light mr-4">
+																				<span class="symbol-label">
+																					<img src="assets/media/svg/avatars/001-boy.svg" class="h-75 align-self-end" alt="">
+																				</span>
+																			</div>
+																			<div>
+																				<span class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-sm text-capitalize">
+                                          david ramírez flores
+                                        </span>
+																			</div>
+																		</div>
+																	</td>
+																	<td>
+																		<span class="text-dark-75 font-weight-bolder d-block font-size-sm">ramzdave@gmail.com</span>
+																	</td>
+																	<td>
+																		<span class="text-dark-75 font-weight-bolder d-block font-size-sm">deividz</span>
+																	</td>
+																	<td>
+																		<span class="label label-lg label-light-success label-inline">Activo</span>																										
+																	</td>
+																	<td class="pr-0 text-center">                                    
+																		<a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm"
+                                    data-toggle="tooltip"
+                                    data-placement="left"
+                                    title="Tooltip on top">
+																		<span class="svg-icon svg-icon-md svg-icon-primary">
+																			<!--begin::Svg Icon | path:assets/media/svg/icons/General/Settings-1.svg-->
+																			<i class="fas fa-list text-primary"></i>
+																			<!--end::Svg Icon-->
+																		</span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm mx-3">
+                                      <span class="svg-icon svg-icon-md svg-icon-primary">
+                                        <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Write.svg-->
+                                        <i class="far fa-edit text-primary"></i>
+                                        <!--end::Svg Icon-->
+                                      </span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm">
+                                      <span class="svg-icon svg-icon-md svg-icon-primary">
+                                        <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
+                                        <i class="fas fa-key text-primary"></i>
+                                        <!--end::Svg Icon-->
+                                      </span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm mx-3">
+                                      <span class="svg-icon svg-icon-md svg-icon-primary">
+                                        <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Write.svg-->
+                                        <i class="fas fa-ban text-primary"></i>
+                                        <!--end::Svg Icon-->
+                                      </span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm">
+                                      <span class="svg-icon svg-icon-md svg-icon-primary">
+                                        <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
+                                        <i class="fas fa-check text-primary"></i>
+                                        <!--end::Svg Icon-->
+                                      </span>
+                                    </a>
+																	</td>
+																 </tr>
+                                 <tr>
+																	<td class="pl-0 py-1">
+																		<div class="d-flex align-items-center">
+																			<div class="symbol symbol-50 symbol-light mr-4">
+																				<span class="symbol-label">
+																					<img src="assets/media/svg/avatars/001-boy.svg" class="h-75 align-self-end" alt="">
+																				</span>
+																			</div>
+																			<div>
+																				<span class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-sm text-capitalize">
+                                          david ramírez flores
+                                        </span>
+																			</div>
+																		</div>
+																	</td>
+																	<td>
+																		<span class="text-dark-75 font-weight-bolder d-block font-size-sm">ramzdave@gmail.com</span>
+																	</td>
+																	<td>
+																		<span class="text-dark-75 font-weight-bolder d-block font-size-sm">deividz</span>
+																	</td>
+																	<td>
+																		<span class="label label-lg label-light-warning label-inline">Inactivo</span>																												
+																	</td>
+																	<td class="pr-0 text-center">                                    
+																		<a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm">
+																		<span class="svg-icon svg-icon-md svg-icon-primary">
+																			<!--begin::Svg Icon | path:assets/media/svg/icons/General/Settings-1.svg-->
+																			<i class="fas fa-list text-primary"></i>
+																			<!--end::Svg Icon-->
+																		</span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm mx-3">
+                                      <span class="svg-icon svg-icon-md svg-icon-primary">
+                                        <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Write.svg-->
+                                        <i class="far fa-edit text-primary"></i>
+                                        <!--end::Svg Icon-->
+                                      </span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm">
+                                      <span class="svg-icon svg-icon-md svg-icon-primary">
+                                        <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
+                                        <i class="fas fa-key text-primary"></i>
+                                        <!--end::Svg Icon-->
+                                      </span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm mx-3">
+                                      <span class="svg-icon svg-icon-md svg-icon-primary">
+                                        <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Write.svg-->
+                                        <i class="fas fa-ban text-primary"></i>
+                                        <!--end::Svg Icon-->
+                                      </span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm">
+                                      <span class="svg-icon svg-icon-md svg-icon-primary">
+                                        <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
+                                        <i class="fas fa-check text-primary"></i>
+                                        <!--end::Svg Icon-->
+                                      </span>
+                                    </a>
+																	</td>
+																 </tr>
+                                 <tr>
+																	<td class="pl-0 py-1">
+																		<div class="d-flex align-items-center">
+																			<div class="symbol symbol-50 symbol-light mr-4">
+																				<span class="symbol-label">
+																					<img src="assets/media/svg/avatars/001-boy.svg" class="h-75 align-self-end" alt="">
+																				</span>
+																			</div>
+																			<div>
+																				<span class="text-dark-75 font-weight-bolder text-hover-primary mb-1 font-size-sm text-capitalize">
+                                          david ramírez flores
+                                        </span>
+																			</div>
+																		</div>
+																	</td>
+																	<td>
+																		<span class="text-dark-75 font-weight-bolder d-block font-size-sm">ramzdave@gmail.com</span>
+																	</td>
+																	<td>
+																		<span class="text-dark-75 font-weight-bolder d-block font-size-sm">deividz</span>
+																	</td>
+																	<td>
+																		<span class="label label-lg label-light-warning label-inline">Inactivo</span>																												
+																	</td>
+																	<td class="pr-0 text-center">                                    
+																		<a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm">
+																		<span class="svg-icon svg-icon-md svg-icon-primary">
+																			<!--begin::Svg Icon | path:assets/media/svg/icons/General/Settings-1.svg-->
+																			<i class="fas fa-list text-primary"></i>
+																			<!--end::Svg Icon-->
+																		</span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm mx-3">
+                                      <span class="svg-icon svg-icon-md svg-icon-primary">
+                                        <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Write.svg-->
+                                        <i class="far fa-edit text-primary"></i>
+                                        <!--end::Svg Icon-->
+                                      </span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm">
+                                      <span class="svg-icon svg-icon-md svg-icon-primary">
+                                        <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
+                                        <i class="fas fa-key text-primary"></i>
+                                        <!--end::Svg Icon-->
+                                      </span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm mx-3">
+                                      <span class="svg-icon svg-icon-md svg-icon-primary">
+                                        <!--begin::Svg Icon | path:assets/media/svg/icons/Communication/Write.svg-->
+                                        <i class="fas fa-ban text-primary"></i>
+                                        <!--end::Svg Icon-->
+                                      </span>
+                                    </a>
+                                    <a href="#" class="btn btn-icon btn-light btn-hover-primary btn-sm">
+                                      <span class="svg-icon svg-icon-md svg-icon-primary">
+                                        <!--begin::Svg Icon | path:assets/media/svg/icons/General/Trash.svg-->
+                                        <i class="fas fa-check text-primary"></i>
+                                        <!--end::Svg Icon-->
+                                      </span>
+                                    </a>
+																	</td>
+																 </tr>																
+															</tbody>
+														</table>
+													</div>
+													<!--end::Table-->
+												</div>
+											</div>
+											<!--end::Body-->
+                      <div class="card-footer">
+													<button type="reset" class="btn btn-primary mr-2">Submit</button>
+													<button type="reset" class="btn btn-secondary">Cancel</button>
+												</div>
+										</div>
+          <!-- tabla widget end -->
         </div>
         <!--end::Container-->
       </div>

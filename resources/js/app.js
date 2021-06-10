@@ -22,6 +22,7 @@ window.Vue = require('vue').default;
 //Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 // Registrar componente base
 Vue.component('App', require('./components/App.vue').default);
+Vue.component('Auth', require('./components/Auth.vue').default);
 
 
 /**
