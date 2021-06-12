@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Administracion\UsersController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,10 +16,11 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('app');
 // })->name('basepath');
+Route::get('/administracion/usuario/getListarUsuarios', [UsersController::class,'getListarUsuarios']);
 
 Route::get('/{optional?}', function () {
     return view('app');
 })->name('basepath');
 
-Route::get('/administracion/usuario/getListarUsuarios', 'Administracion\UserController@getListarUsuarios');
+
 

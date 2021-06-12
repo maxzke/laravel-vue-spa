@@ -489,7 +489,7 @@
 export default {
   data(){
     return{
-      paramBusqueda:'',
+      paramBusqueda:'sde',
       listUsuarios:[],
       //utilizaremos la biblioteca de element.io
     }
@@ -499,11 +499,11 @@ export default {
       //ruta que contendra la peticion
       let url = '/administracion/usuario/getListarUsuarios';
       axios.get(url,{
-        param:{
-          'buscar':this.paramBusqueda
+        params:{
+          'paramBuscar':this.paramBusqueda
         }
       }).then(response => {
-        console.log(response);
+        console.log(response.data);
       })
     }
   }

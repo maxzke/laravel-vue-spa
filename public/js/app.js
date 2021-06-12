@@ -5723,7 +5723,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      paramBusqueda: '',
+      paramBusqueda: 'sde',
       listUsuarios: [] //utilizaremos la biblioteca de element.io
 
     };
@@ -5733,11 +5733,11 @@ __webpack_require__.r(__webpack_exports__);
       //ruta que contendra la peticion
       var url = '/administracion/usuario/getListarUsuarios';
       axios.get(url, {
-        param: {
-          'buscar': this.paramBusqueda
+        params: {
+          'paramBuscar': this.paramBusqueda
         }
       }).then(function (response) {
-        console.log(response);
+        console.log(response.data);
       });
     }
   }
