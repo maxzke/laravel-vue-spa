@@ -1,5 +1,4 @@
 <template>
-  <div>
     <div
       class="aside aside-left aside-fixed d-flex flex-column flex-row-auto"
       id="kt_aside"
@@ -3464,7 +3463,6 @@
       </div>
       <!--end::Aside Menu-->
     </div>
-  </div>
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="d-flex flex-column flex-root">
       <!--begin::Main-->
 		<!--begin::Header Mobile **********************************************************************-->
 		<HeaderMovil :ruta="ruta"></HeaderMovil>

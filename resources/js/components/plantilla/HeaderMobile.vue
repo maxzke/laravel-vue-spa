@@ -1,5 +1,4 @@
 <template>
-  <div>
     <div
       id="kt_header_mobile"
       class="header-mobile align-items-center header-mobile-fixed"
@@ -61,7 +60,6 @@
       </div>
       <!--end::Toolbar-->
     </div>
-  </div>
 </template>
 
 <script>

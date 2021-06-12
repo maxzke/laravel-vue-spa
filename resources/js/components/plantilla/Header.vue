@@ -1,5 +1,4 @@
 <template>
-  <div>
     <div id="kt_header" class="header header-fixed">
       <!--begin::Container-->
       <div
@@ -2381,7 +2380,6 @@
       </div>
       <!--end::Container-->
     </div>
-  </div>
 </template>
 
 <script>

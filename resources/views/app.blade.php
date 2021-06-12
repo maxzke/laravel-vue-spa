@@ -4,7 +4,7 @@
 	<!--end::Head-->
 	<!--begin::Body-->
 	<body id="kt_body" 
-    class="header-fixed header-mobile-fixed subheader-enabled subheader-fixed aside-enabled aside-fixed aside-minimize-hoverable page-loading"
+    class="header-fixed header-mobile-fixed aside-enabled aside-fixed aside-minimize-hoverable page-loading"
     style="height: 100%;">
 		<!--begin::Div#app-->
         <div id="app" class="d-flex flex-column flex-root">
